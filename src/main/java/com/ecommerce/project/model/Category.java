@@ -7,10 +7,10 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
-@Entity (name = "categories")
+@Entity(name = "categories")
 public class Category {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long categoryId;
     private String categoryName;
 
