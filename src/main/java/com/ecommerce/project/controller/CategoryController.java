@@ -29,7 +29,7 @@ public class CategoryController {
 
     @RequestMapping(value = "/admin/categories", method = RequestMethod.POST)
     public ResponseEntity<String> addCategory(@RequestBody Category category) {
-        categoryService.addCategory(category);
+        categoryService.createCategory(category);
         return new ResponseEntity<>("Successfully Added Category", HttpStatus.CREATED);
     }
 
