@@ -13,13 +13,13 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name = "categories")
+@Entity (name = "categories")
 public class Category {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long categoryId;
-    @NotBlank(message = "Category name is required")
-    @Size(min = 5, message = "Category name must be at least 5 characters")
+    @NotBlank (message = "Category name is required")
+    @Size (min = 5, message = "Category name must be at least 5 characters")
     private String categoryName;
-
+    
 }
